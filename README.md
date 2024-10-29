@@ -60,7 +60,6 @@ OR
 
 ```
 vim virustotal.rb
+```
 
 ![plot](./images/keys.png)
-
-```
