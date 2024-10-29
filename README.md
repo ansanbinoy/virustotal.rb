@@ -6,14 +6,14 @@ A Ruby tool to fetch URLs associated with domains or subdomains from VirusTotal.
 
 -   **Linux**
 
-```bash
+```
 cp virustotal.rb ~/.local/bin
 
 ```
 
 -   Options
 
-```txt
+```
 Usage: ./virustotal.rb [options]
     -f, --file FILE                  File that contain domains
     -s, --[no-]subs                  Take subdomains from given domains
@@ -23,7 +23,7 @@ Usage: ./virustotal.rb [options]
 
 -   Inlude domain siblings from virustotal
 
-```bash
+```
 virustotal.rb -f domains --subs -p apiKeys.txt
 
 ```
@@ -37,7 +37,7 @@ cat domains | virustotal.rb --subs  -p apiKeys.txt
 
 -   Fetch urls only give subdomain or domains.
 
-```bash
+```
 virustotal.rb -f domains -p apikeys.txt
 
 ```
@@ -48,3 +48,14 @@ OR
 cat domains | virustotal.rb -p apiKeys.txt
 
 ```
+
+-   You can pass api keys as argument or declare in source
+
+```
+cat domain | virustotal -p apikeys
+
+```
+
+OR
+
+![plot](./images/keys.png)

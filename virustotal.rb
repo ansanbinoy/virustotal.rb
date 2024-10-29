@@ -126,8 +126,8 @@ def main
     api = "https://www.virustotal.com/vtapi/v2/domain/report"
     domain = nil  # domains = [""]
     apiKeys = nil # apiKeys = ["Key1", "Key2"]
-
     args = Hash[]
+
     args[:subs] = false
     if not apiKeys.nil?
         args[:path] = true
@@ -164,7 +164,6 @@ def main
 
     VirusTotal::new(api, apiKeys, domains, args[:subs]).run
 end 
-
 
 if caller.length == 0
     main
