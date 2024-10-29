@@ -58,4 +58,9 @@ cat domain | virustotal -p apikeys
 
 OR
 
+```
+vim virustotal.rb
+
 ![plot](./images/keys.png)
+
+```
